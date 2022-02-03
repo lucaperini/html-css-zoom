@@ -4,13 +4,14 @@
     padding: 0;
 }
 
-body{font-family:sans-serif;}
+body{
+    font-family:sans-serif;
+}
 
 header{
     width:100vw;
     height:10vh;
     background-color: black;
-    border-bottom:3px solid white;
     position:fixed;
     z-index:2;
     
@@ -18,19 +19,11 @@ header{
 
 footer{
     width:100vw;
-    height:11vh;
+    height:9vh;
     background-color: #343434;
+    justify-content:center;
+    align-items: center;
     
-}
-
-.footer-flex{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-}
-
-.container{
-    width:100vw;
 }
 
 .container-flex{
@@ -38,9 +31,11 @@ footer{
     flex-direction:row;
     justify-content:center;
     gap:5px 5px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding-top:100px;
     background-color: black;
+    height:91vh;
+    overflow:scroll;
 }
 
 .relative{
@@ -49,10 +44,14 @@ footer{
 
 .fas {
     color:white;
+    
+    
 }
 
 .topbar-right {
-    text-align:right;
+    float:right;
+    
+    
 }
 
 .topbar-right p{
@@ -60,6 +59,55 @@ footer{
     text-align:right;
     display:inline-block;
     font-size:0.7rem;
+}
+
+.speaker{
+    background-color: #343434;
+    border-radius:5px;
+    padding:5px 10px;
+    font-size:0.8rem;
+    display: inline-block;
+    
+    
+}
+
+.arrow{
+    background-color: #343434;
+    border-radius:5px;
+    padding:3px 0px;
+    font-size:0.9rem;
+    display: inline-block;
+    margin-right:10px;
+    
+}
+
+.arrow i{
+    margin-left:10px;
+}
+
+.item {
+    height:60%;
+    text-align: center;
+    margin:auto;
+    
+}
+
+.item p{
+    font-size: 0.7rem;
+    color:white;
+}
+
+.item .fas i{
+    font-size: 2rem;
+    padding-right:50px;
+}
+
+.item-selected > i{
+    color:lime;
+}
+
+.middle {
+font-size:0.8rem;
 }
 
 .user-zoom{
@@ -78,19 +126,46 @@ footer{
     
 }
 
-.speaker p,i{
-    background-color: #343434;
-    border-radius:5px;
-    padding:5px 3px;
-    font-size:0.7rem;
-    
+.footer-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+.footer-flex h5{
+    font-size:0.7rem;
+    color:orangered;
+    align-self: center;
+    background-color: gray;
+    padding:30px 5px;
+}
 
+div#footer-left {
+    margin-left:2rem;
+}
 
+div#footer-left i{
+    font-size:1.3rem;
+    padding:3px;
+}
 
+div#footer-center{
+    flex-basis:40%;
+    justify-content:space-around;
+    }
 
+div#footer-center i{
+    font-size:1.3rem;
+    padding:5px;
+}
 
+div#footer-right{
+    background-color: gray;
+    justify-content:space-between;
+}
 
+div#footer-right i{
+    margin-right:5px;   
+}
 
 
